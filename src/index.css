@@ -16,8 +16,9 @@
     font-family: var(--font-main);
   }
   .background {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
+    min-height: 100vh;
     position: relative;
     background: #020617;
   }
@@ -27,7 +28,7 @@
       rgba(139, 92, 246, 0.4),
       transparent
     );
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
@@ -61,4 +62,7 @@
       transparent 60%
     );
   }
+}
+html {
+  overflow-x: hidden;
 }

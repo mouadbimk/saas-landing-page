@@ -4,7 +4,7 @@ function HeroSection() {
   const [contactHover, setContactHover] = useState(false);
 
   return (
-    <div className="w-full min-h-150 mt-15 relative">
+    <div className="w-full min-h-120 mt-15 relative">
       <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto">
         <div className="flex-1 px-5">
           <h2 className="text-4xl font-bold  text-white mb-6 md:text-6xl">
@@ -16,11 +16,11 @@ function HeroSection() {
             workflows, track performance, and move with confidence.
           </p>
           <div className="flex flex-col md:flex-row items-center md:gap-1 mt-6 w-full px-3 gap-3 md:px-0 md:w-120">
-            <button className=" text-slate-400 text-base border hover:flex-2 border-white w-full md:flex-1 px-4 py-2 rounded-md cursor-pointer duration-600 transition-all group-hover:border-slate-200 hover:border-(--color-primary) hover:text-(--color-primary)">
+            <button className=" text-slate-400 text-base border hover:flex-2 border-white/30 truncate w-full md:flex-1 px-4 py-2 rounded-md cursor-pointer duration-600 transition-all group-hover:border-slate-200 hover:border-(--color-primary) hover:text-(--color-primary)">
               View Live Demo
             </button>
             <button
-              className="flex items-center justify-center w-full md:flex-1 text-base gap-1 bg-(--color-primary) hover:bg-(--color-primary_hover) transition-all duration-500 text-slate-100 border border-(--color-primary) px-4 py-2 rounded-md cursor-pointer hover:flex-2"
+              className="flex items-center truncate justify-center w-full md:flex-1 text-base gap-1 bg-(--color-primary) hover:bg-(--color-primary_hover) transition-all duration-500 text-slate-100 border border-(--color-primary) px-4 py-2 rounded-md cursor-pointer hover:flex-2"
               onMouseEnter={() => setContactHover(true)}
               onMouseLeave={() => setContactHover(false)}
             >
