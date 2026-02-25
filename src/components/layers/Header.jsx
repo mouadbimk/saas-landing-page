@@ -203,7 +203,7 @@ function Header() {
           </button>
         </div>
         <div
-          className={`absolute bg-white shadow-xl shadow-black/5 transition-all duration-500 top-full rounded-b-md left-0 w-full overflow-hidden ${menuOpen ? "max-h-120 opacity-100 visible pointer-events-auto" : "max-h-0 opacity-0 pointer-events-none"}`}
+          className={`absolute bg-white shadow-xl shadow-black/5 transition-all duration-500 top-full rounded-b-md left-0 w-full overflow-hidden  ${menuOpen ? "max-h-120 opacity-100  pointer-events-auto" : "max-h-0 -z-30 opacity-0 pointer-events-none"}`}
           onMouseLeave={closeMenu}
         >
           {menuContent === "products" && (
