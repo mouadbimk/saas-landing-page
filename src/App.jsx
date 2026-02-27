@@ -7,10 +7,12 @@ function App() {
   return (
     <div className="background">
       <div className="background-glow" />
-      <Header />
-      <HeroSection />
-      <Features />
-      <MainFeatures />
+      <div className="relative z-100">
+        <Header />
+        <HeroSection />
+        <Features />
+        <MainFeatures />
+      </div>
     </div>
   );
 }
